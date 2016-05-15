@@ -19,9 +19,8 @@ gulp.task('server',['sass'], function() {
         startPath:"/tpls/share_bad_friends.html"
     });
     gulp.watch([options.fe.src + "/tpls/*.html"]).on('change',browserSync.reload);
-    gulp.watch([options.fe.src + "/js/*.js"]).on('change',browserSync.reload);
-    gulp.watch(options.fe.src + "/scss.scss",['sass']);
-    gulp.watch([options.fe.src + "/third_party/**"]).on('change',browserSync.reload);
+    gulp.watch([options.fe.src + "/js/*.js",options.fe.src + "/third_party/**" ,options.fe.src + "/img/**"]).on('change',browserSync.reload);
+    gulp.watch(options.fe.src + "/scss/*.scss",['sass']);
 });
 gulp.task('sass', function() {
     return gulp.src(options.fe.src + "/scss/*.scss")

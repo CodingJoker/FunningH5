@@ -1,0 +1,123 @@
+body{
+	background:#1A608A;
+}
+.user-head-img{
+	margin:auto auto;
+	$r:4rem;
+	width: 2*$r;
+	height: 2*$r;
+	border-radius:$r;
+	background:url(../img/myself.jpg) no-repeat -5rem -9rem;
+	background-size:20rem;
+}
+.alert-msg{
+	position: relative;
+	width: 15rem;
+	background:#fff;
+	height: 2rem;
+	line-height:2rem;
+	text-align:center;
+	margin:auto;
+	margin-top:1rem;
+	border-radius:0.3rem;
+	&:before{
+		position: absolute;
+		top: -0.5rem;
+		content: ' ';
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		border-bottom:0.5rem solid #fff;
+		border-left:1rem solid transparent;
+		border-right:1rem solid transparent;
+	}
+}
+.input-user{
+	margin-top:1rem;
+	div{
+		display: inline-block;
+		vertical-align: middle;
+		&.head-img{
+			$r:2.5rem;
+			width: 2*$r;
+			height: 2*$r;
+			border-radius:$r;
+			background: url(../img/zero.png) no-repeat 0rem -0.5rem;
+			background-size:5rem;
+		}
+		&.input{
+			position:relative;
+			width: 22rem;
+			margin-left: 1rem;
+			height: 2.5rem;
+			line-height: 2.5rem;
+			background-color: #fff;
+			border-radius:0.5rem;
+			&:before{
+				content: ' ';
+				position: absolute;
+				left: -1rem;
+				top: 0.5rem;
+				border-right:1.5rem solid #fff;
+				border-top:1rem solid transparent;
+				border-bottom:1rem solid transparent;
+
+			}
+			textarea{
+				box-sizing:border-box;
+				-webkit-box-sizing:border-box;
+				width: 100%;
+				padding-left: 1rem;
+				border:none;
+				outline: none;
+				border-radius:0.5rem;
+			}
+		}
+	}
+}
+.friends_comment{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	padding-left:2rem;
+	.comment-num{
+		margin:1rem 0;
+	}
+	.comment{
+		div{
+			display: inline-block;
+			&.user{
+				width: 6rem;
+				.head-img{
+					display:block;
+					width: 100%;
+					margin:auto;
+					$r:2rem;
+					width: 2*$r;
+					height: 2*$r;
+					border-radius:$r;
+					background:url(../img/luffy.png) no-repeat 0rem 0rem;
+					background-size:4rem;
+				}
+				.like{
+					display: inline-block;
+					vertical-align: middle;
+					margin-top: 0.5rem;
+					width: 1.5rem;
+					height: 2rem;
+					background:url(../img/like.png) no-repeat 0.4rem 0.5rem;
+					background-size:1.2rem;
+				}
+				.like-num{
+					display: inline-block;
+					vertical-align: bottom;
+					height: 2rem;
+					line-height: 2rem;
+					color:#fff;
+				}
+			}
+			&.comment-area{
+
+			}
+		}
+	}
+}
