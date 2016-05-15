@@ -1,0 +1,18 @@
+{
+  "name": "funningh5",
+  "version": "0.0.1",
+  "description": "some h5 funning h5 app set",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingJoker/FunningH5.git"
+  },
+  "author": "zhumin (Jumor)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodingJoker/FunningH5/issues"
+  },
+  "homepage": "https://github.com/CodingJoker/FunningH5#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
