@@ -69,33 +69,90 @@ body {
 .friends_comment {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  padding-left: 2rem; }
+  padding-left: 2rem;
+  margin-bottom: 10rem; }
   .friends_comment .comment-num {
     margin: 1rem 0; }
-  .friends_comment .comment div {
-    display: inline-block; }
-    .friends_comment .comment div.user {
-      width: 6rem; }
-      .friends_comment .comment div.user .head-img {
-        display: block;
-        width: 100%;
-        margin: auto;
-        width: 4rem;
-        height: 4rem;
-        border-radius: 2rem;
-        background: url(../img/luffy.png) no-repeat 0rem 0rem;
-        background-size: 4rem; }
-      .friends_comment .comment div.user .like {
+  .friends_comment .comment {
+    margin-bottom: 0.5rem; }
+    .friends_comment .comment div {
+      display: inline-block; }
+      .friends_comment .comment div.user {
+        width: 6rem;
+        vertical-align: middle; }
+        .friends_comment .comment div.user .head-img {
+          display: block;
+          width: 100%;
+          margin: auto;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 2rem;
+          background: url(../img/luffy.png) no-repeat 0rem 0rem;
+          background-size: 4rem; }
+        .friends_comment .comment div.user .like {
+          display: inline-block;
+          vertical-align: middle;
+          margin-top: 0.5rem;
+          width: 1.5rem;
+          height: 2rem;
+          background: url(../img/like.png) no-repeat 0.4rem 0.5rem;
+          background-size: 1.2rem; }
+        .friends_comment .comment div.user .like-num {
+          display: inline-block;
+          vertical-align: bottom;
+          height: 2rem;
+          line-height: 2rem;
+          color: #fff; }
+      .friends_comment .comment div.comment-area {
+        position: relative;
         display: inline-block;
-        vertical-align: middle;
-        margin-top: 0.5rem;
-        width: 1.5rem;
-        height: 2rem;
-        background: url(../img/like.png) no-repeat 0.4rem 0.5rem;
-        background-size: 1.2rem; }
-      .friends_comment .comment div.user .like-num {
-        display: inline-block;
-        vertical-align: bottom;
-        height: 2rem;
-        line-height: 2rem;
-        color: #fff; }
+        width: 20rem;
+        vertical-align: top;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        background: #fff;
+        padding: 0.5rem;
+        border-radius: 0.5rem; }
+        .friends_comment .comment div.comment-area span {
+          display: inline-block; }
+          .friends_comment .comment div.comment-area span.more {
+            line-height: 1.5rem;
+            height: 4.5rem;
+            overflow: hidden; }
+          .friends_comment .comment div.comment-area span.more-icon-down {
+            position: absolute;
+            bottom: 0.7rem;
+            right: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            background: #ffffff url(../img/more-down.png) no-repeat 0 0;
+            background-size: 1.3rem 1.5rem; }
+        .friends_comment .comment div.comment-area:before {
+          content: ' ';
+          position: absolute;
+          left: -1rem;
+          top: 2rem;
+          -webkit-transform: translateY(-50%);
+          border-right: 1.5rem solid #fff;
+          border-top: 1rem solid transparent;
+          border-bottom: 1rem solid transparent; }
+
+.want-play {
+  position: fixed;
+  bottom: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: #1A608A; }
+  .want-play span {
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    background: #FF2C2C;
+    color: #fff;
+    border-radius: 0.5rem;
+    letter-spacing: 0.5rem;
+    font-size: 1.3rem; }
