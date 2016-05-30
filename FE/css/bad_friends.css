@@ -31,6 +31,7 @@ body {
     border-right: 1rem solid transparent; }
 
 .input-user {
+  position: relative;
   margin-top: 1rem; }
   .input-user div {
     display: inline-block;
@@ -42,8 +43,10 @@ body {
       background: url(../img/zero.png) no-repeat 0rem -0.5rem;
       background-size: 5rem; }
     .input-user div.input {
-      position: relative;
-      width: 22rem;
+      position: absolute;
+      top: 1rem;
+      left: 5.5rem;
+      right: 0.5rem;
       margin-left: 1rem;
       height: 2.5rem;
       line-height: 2.5rem;
@@ -69,12 +72,13 @@ body {
 .friends_comment {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  padding-left: 2rem;
+  padding-left: 1rem;
   margin-bottom: 10rem; }
   .friends_comment .comment-num {
     margin: 1rem 0; }
   .friends_comment .comment {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    position: relative; }
     .friends_comment .comment div {
       display: inline-block; }
       .friends_comment .comment div.user {
@@ -104,9 +108,11 @@ body {
           line-height: 2rem;
           color: #fff; }
       .friends_comment .comment div.comment-area {
-        position: relative;
+        position: absolute;
         display: inline-block;
-        width: 20rem;
+        top: 0.5rem;
+        left: 6rem;
+        right: 0.3rem;
         vertical-align: top;
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -130,12 +136,12 @@ body {
         .friends_comment .comment div.comment-area:before {
           content: ' ';
           position: absolute;
-          left: -1rem;
+          left: -0.5rem;
           top: 2rem;
-          -webkit-transform: translateY(-50%);
-          border-right: 1.5rem solid #fff;
-          border-top: 1rem solid transparent;
-          border-bottom: 1rem solid transparent; }
+          -webkit-transform: translateY(-70%);
+          border-right: 0.7rem solid #fff;
+          border-top: 0.5rem solid transparent;
+          border-bottom: 0.5rem solid transparent; }
 
 .want-play {
   position: fixed;
