@@ -1,4 +1,4 @@
-//just test
+//just test1
 var Car = function(wheel,type,speed){
 	this.wheel = wheel || 0;
 	this.type = type || 0;
