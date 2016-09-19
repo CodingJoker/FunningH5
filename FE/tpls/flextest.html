@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex</title>
+	<style type="text/css" media="screen">
+	*{
+		margin:0;
+		padding:0;
+	}
+		body{
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+		}
+		header,footer{
+			background: red;
+			flex: 0 1 50px;
+		}
+		.body{
+			display: flex;
+			flex:1;
+		}
+		.body nav{
+			flex:0 1 20%;
+			background: blue
+		}
+		.body article{
+			flex:0 1 60%;
+			background: yellow
+		}
+		.body aside{
+			flex:0 1 20%;
+			background: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<header>#header</header>
+	<div class="body">
+		<nav></nav>
+		<article>
+
+		</article>
+		<aside>
+
+		</aside>
+	</div>
+	<footer>
+	#footer
+	</footer>
+</body>
+</html>

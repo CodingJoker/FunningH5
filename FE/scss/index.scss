@@ -1,0 +1,26 @@
+body{
+	background:#0c5a8a;
+	font-family: 'Comic Sans MS',cursive,sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	cursor:pointer;
+	.target-box{
+		width: 100vw;
+		height: 100vh;
+		a{
+			display: inline-block;
+			width: 20%;
+			height: 100px;
+			color:#000;
+			text-decoration: none;
+			background:#fff;
+			text-align: center;
+			line-height: 100px;
+			border-radius: 5px;
+			transition:font-size .1s ease-in ;
+			&:hover{
+				font-size:18px;
+			}
+		}
+	}
+}
